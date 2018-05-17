@@ -1,12 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
-import {
-  Task,
-  TaskService
-} from '../../task.barrel';
-import {
-  Timekeeper
-} from '../../../shared/shared.barrel';
+import { Task, TaskService } from '../../task.barrel';
+import { Timekeeper } from '../../../shared/shared.barrel';
 
 @Component({
   selector: 'app-task-list-item',
@@ -24,6 +19,7 @@ export class TaskListItemComponent implements OnInit {
   public constructor(private _taskService: TaskService) {
     //
   }
+
 
   public ngOnInit() {
     //
@@ -55,5 +51,4 @@ export class TaskListItemComponent implements OnInit {
       }
     )
   }
-
 }

@@ -36,7 +36,7 @@ export class TaskService {
   public update(task: Task, responseConfig: ApiResponseConfig): void {
     this._apiService.request(
       {
-        method: 'Patch',
+        method: 'Put',
         url: 'task/' + task.id,
         body: task
       },
@@ -53,5 +53,4 @@ export class TaskService {
       responseConfig
     );
   }
-
 }

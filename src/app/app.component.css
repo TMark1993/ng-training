@@ -1,3 +1,6 @@
 div {
     margin: 0 15px;
 }
+.gu-mirror {
+    display: none !important;
+}

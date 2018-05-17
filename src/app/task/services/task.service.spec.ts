@@ -12,4 +12,8 @@ describe('TaskService', () => {
   it('should ...', inject([TaskService], (service: TaskService) => {
     expect(service).toBeTruthy();
   }));
+
+  it('sum method should return the sum of two args.', inject([TaskService], (service: TaskService) => {
+    expect(service).toBe(11); () => {
+  }
 });

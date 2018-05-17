@@ -2,7 +2,7 @@
   My Tasks
   <img *ngIf="loading" src="assets/loader.gif">
 </h3>
-<ul>
+<ul [dragula]='"bag-one"' [dragulaModel]='tasks' id="TaskListID">
   <li *ngFor="let task of tasks">
     <app-task-list-item
       [task]="task"

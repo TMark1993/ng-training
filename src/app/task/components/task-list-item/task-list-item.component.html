@@ -3,3 +3,6 @@
 <button class="btn btn-xs btn-danger" (click)="deleteTask(task)">Delete</button>
 <span class="small">{{task.created_at|age:now}} min</span>
 <img *ngIf="loading" src="assets/loader.gif">
+<span class="small">{{task.position}}, {{task.id}}</span>
+<input type="hidden" value={{task.id}}>
+<img class="handle" [attr.data-position]="task.position" src="assets/move-icon.png" width="16">

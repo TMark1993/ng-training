@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { DragulaModule } from 'ng2-dragula';
 import {
   TaskRoutingModule,
   TaskListComponent,
@@ -13,7 +14,8 @@ import {
   imports: [
     CommonModule,
     FormsModule,
-    TaskRoutingModule
+    TaskRoutingModule,
+    DragulaModule
   ],
   declarations: [
     TaskListComponent,
